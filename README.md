@@ -22,4 +22,19 @@ random_leetcode
    - [ ] Update lc_todo file when questions are updated
    - [ ] Store lc_done file in $HOME
  - [ ] Test on Windows / Mac
- - [ ] Add code to package and publish on PyPI
+ - [x] Add code to package and publish on PyPI
+
+
+### Code to publish on https://test.pypi.org/
+```shell
+# Create account and generate API token on https://test.pypi.org/
+# Create a file .pypirc in home directory with token credentials
+# cd to this git repo
+cd /path/to/this/repo/
+# remove the old dist/ folder (if present)
+rm -rf dist/
+# build the dist
+python3 -m build
+# publish to testpypi
+python3 -m twine upload --repository testpypi dist/*
+```
