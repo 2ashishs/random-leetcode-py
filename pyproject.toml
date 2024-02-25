@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+random_leetcode = ["lc_master.txt"]
+
+[project]
+name = "random_leetcode"
+version = "2402.0.1"
+requires-python = ">= 3.6"
+authors = [
+    {name = "Ashish Sadhwani", email = "2ashishs@gmail.com"}
+]
+maintainers = [
+    {name = "Ashish Sadhwani", email = "2ashishs@gmail.com"}
+]
+description = "randomly select a top interview prep question from leetcode and open in browser"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["leetcode", "top interview questions", "tech interview", "faang", "Ashish Sadhwani", "2ashishs"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development"
+]
+
+[project.scripts]
+random_leetcode = "random_leetcode.random_leetcode:main"
+
+[project.urls]
+Homepage = "https://github.com/2ashishs/random-leetcode-py"
+Repository = "https://github.com/2ashishs/random-leetcode-py.git"
+Issues = "https://github.com/2ashishs/random-leetcode-py/issues"
