@@ -5,7 +5,6 @@
 # Random LeetCode Python Utility:
 # Randomly selects and opens a top interview question in browser.
 
-
 import os
 import random
 import shutil
