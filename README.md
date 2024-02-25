@@ -4,7 +4,12 @@ Python script to randomly select a top interview prep question from leetcode and
 *Tested on Linux.*
 
 ### Install using pip
-`pip install -i https://test.pypi.org/simple/ random-leetcode`
+```shell
+pip install -i https://test.pypi.org/simple/ random-leetcode
+# now run in shell
+random_leetcode
+# browser should open with a leetcode question
+```
 
 ### Install from source
 ```shell
