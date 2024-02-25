@@ -3,11 +3,11 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.package-data]
-random_leetcode = ["lc_master.txt"]
+random_leetcode = [".lc_top_questions"]
 
 [project]
 name = "random_leetcode"
-version = "2402.0.1"
+version = "2402.0.2"
 requires-python = ">= 3.6"
 authors = [
     {name = "Ashish Sadhwani", email = "2ashishs@gmail.com"}
